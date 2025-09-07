@@ -1,4 +1,6 @@
-## Hi there 👋
+![Hi There](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzZvMW1rczJldDJ6bXB5eGt4cWtmOTNxb3c4ZXRrbG1kYWJtMjZyeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/HzPtbOKyBoBFsK4hyc/giphy.gif)
+
+## Hi there, I'm Ardhito 👋
 
 <!--
 **WorryHusky/WorryHusky** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -13,4 +15,5 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+-->- 🔭 I’m currently working on small  campus project
+- 🌱 I’m currently learning [**Laravel**](https://laravel.com/) Framework
