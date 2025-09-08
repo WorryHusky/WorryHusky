@@ -1,29 +1,38 @@
-# Nama workflow
 name: Generate GitHub Snake
 
-# Kontrol kapan workflow berjalan
 on:
   schedule:
-    # Berjalan setiap hari pada jam 00:00 UTC
     - cron: "0 0 * * *"
-  # Tombol untuk menjalankan workflow secara manual dari tab Actions
   workflow_dispatch:
 
 jobs:
   build:
-    # ==========================================================
-    # BAGIAN 1: KUNCI PERBAIKAN UNTUK ERROR 403 (IZIN)
-    # ==========================================================
+    # Izin ini tetap sangat penting
     permissions:
       contents: write
 
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout kode repositori Anda
       - uses: actions/checkout@v3
-      - uses: Platane/snk@v3
+
+      # Step 2: Hanya men-generate file snake, tidak melakukan push
+      - name: Generate snake files
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Step 3: Melakukan commit dan push folder 'dist' secara paksa
+      - name: Commit and push generated files
+        uses: EndBug/add-and-commit@v9
+        with:
+          # Direktori yang akan di-commit
+          add: 'dist'
+          # Pesan commit yang akan dibuat oleh bot
+          message: 'chore: Generate contribution snake'
+          # Branch tujuan
+          branch: main
