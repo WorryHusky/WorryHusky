@@ -1,13 +1,15 @@
-## Hi there, I'm Ardhito 👋
-
+## Hi there, I'm Ardhito <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 40>
 ![Ardhito](img/github-header-banner.png)
+# 💫 About Me:
+- 🔭 I’m currently working on small campus project<br>
+- 🌱 I am currently a student at Politeknik Elektronika Negeri Surabaya (PENS)
 
-- 🔭 I’m currently working on small campus project
-- 🌱 I’m currently learning [**Laravel**](https://laravel.com/) Framework
-- 📫 How to reach me:
 
-##### Skills
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/dto.ck) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/worry_husky) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:moch.ardhito@gmail.com) 
 
+# 💻 Tech Stack:
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
 <!-- Bahasa Pemrograman -->
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
@@ -15,11 +17,6 @@
 <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
 <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
-
-<!-- Database -->
-<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white" />
 
 <!-- Tools -->
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
@@ -35,11 +32,18 @@
 <!-- Library -->
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
 
-### 📊 GitHub Stats
+<!-- Database -->
+<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white" />
+</div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=WorryHusky&layout=compact&theme=tokyonight)
+# 📊 GitHub Stats:
 
+![](https://nirzak-streak-stats.vercel.app/?user=WorryHusky&theme=transparent&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=WorryHusky&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-### 🐍 GitHub Contribution Snake
-![github-snake](https://raw.githubusercontent.com/WorryHusky/WorryHusky/output/dist/github-snake.svg)
+---
+[![](https://visitcount.itsvg.in/api?id=WorryHusky&icon=3&color=6)](https://visitcount.itsvg.in)
 
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
