@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    # Izin ini tetap sangat penting
+    # Izin untuk menulis ke repositori
     permissions:
       contents: write
 
@@ -17,7 +17,7 @@ jobs:
       # Step 1: Checkout kode repositori Anda
       - uses: actions/checkout@v3
 
-      # Step 2: Hanya men-generate file snake, tidak melakukan push
+      # Step 2: Generate file snake
       - name: Generate snake files
         uses: Platane/snk@v3
         with:
@@ -26,13 +26,10 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Step 3: Melakukan commit dan push folder 'dist' secara paksa
+      # Step 3: Commit dan push folder 'dist'
       - name: Commit and push generated files
         uses: EndBug/add-and-commit@v9
         with:
-          # Direktori yang akan di-commit
           add: 'dist'
-          # Pesan commit yang akan dibuat oleh bot
           message: 'chore: Generate contribution snake'
-          # Branch tujuan
           branch: main
