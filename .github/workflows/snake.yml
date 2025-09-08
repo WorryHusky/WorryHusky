@@ -6,47 +6,24 @@ on:
   schedule:
     # Berjalan setiap hari pada jam 00:00 UTC
     - cron: "0 0 * * *"
+  # Tombol untuk menjalankan workflow secara manual dari tab Actions
   workflow_dispatch:
-    # Tombol untuk menjalankan workflow secara manual dari tab Actions
 
-# Sebuah workflow terdiri dari satu atau lebih job yang berjalan secara sekuensial atau paralel
 jobs:
-  # Job ini bernama "build"
   build:
-    # Menambahkan izin untuk menulis ke repositori
+    # ==========================================================
+    # BAGIAN 1: KUNCI PERBAIKAN UNTUK ERROR 403 (IZIN)
+    # ==========================================================
     permissions:
       contents: write
 
-    # Tipe runner yang akan digunakan
     runs-on: ubuntu-latest
 
-    # Steps merepresentasikan urutan task yang akan dieksekusi
     steps:
-      # Step 1: Checkout repositori Anda agar workflow bisa mengaksesnya
       - uses: actions/checkout@v3
-
-      # Step 2: Generate gambar ular dari kontribusi GitHub Anda
       - uses: Platane/snk@v3
         with:
-          # ID pengguna GitHub Anda
           github_user_name: ${{ github.repository_owner }}
-
-          # Daftar file output yang akan digenerate.
-          # dist/github-contribution-grid-snake.svg -> gambar ular animasi
-          # dist/github-contribution-grid-snake-dark.svg -> versi gelap (opsional)
-          # dist/ocean.gif -> output gif dengan tema ocean (opsional)
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-
-      # Step 3: Push file yang sudah digenerate ke repositori
-      # Aksi ini akan otomatis membuat commit baru jika ada perubahan pada file di folder 'dist'
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          # Direktori yang berisi file yang akan di-push
-          target_branch: main # Anda bisa ganti ke branch lain jika perlu
-          build_dir: dist
-        env:
-          # Token yang diperlukan untuk otentikasi push
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
