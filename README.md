@@ -40,4 +40,6 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=WorryHusky&layout=compact&theme=tokyonight)
 
 
+### 🐍 GitHub Contribution Snake
+![github-snake](https://raw.githubusercontent.com/WorryHusky/WorryHusky/output/dist/github-snake.svg)
 
